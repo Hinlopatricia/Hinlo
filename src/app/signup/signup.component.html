@@ -1,0 +1,41 @@
+<body>
+    <div class="Main-container">
+        <div class="container-login">
+            <div class="wrap-login">
+
+                <div class="login-pic">
+                    <img src="https://i.pinimg.com/originals/30/d5/e6/30d5e6fc8b2fab452555c9314d72be59.gif" alt="IMG">
+                </div>
+                
+            <form class="login">
+                <form class="login-form">
+                    <span class="login-form-title">Sign Up</span>
+                    <form #LoginForm="ngForm" (ngSubmit)="registerUser(LoginForm.value)">
+                    <div class="wrap-input">
+                        <input type="text" class="input" ngModel id="email" name="email" placeholder="Email" required>
+                        <span class="focus-input"></span>
+                        <span class="symbol-input">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="wrap-input">
+                        <input type="text" class="input" ngModel id="username" name="username" placeholder="Username" required>
+                        <span class="focus-input"></span>
+                        <span class="symbol-input">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="wrap-input">
+                        <input type="password" class="input"  ngModel id="password" name="password" placeholder="Password" required>
+                        <span class="focus-input"></span>
+                        <span class="symbol-input">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="login-form-btn-container">
+                        <button class="login-form-btn" name="Login_submit" id="saveData">Submit</button>
+                    </div>
+
+
+                </form>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "proj1-df86b": {
+      "hosting": {
+        "pat": [
+          "proj1-df86b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proj1-df86b"
+  }
+}
